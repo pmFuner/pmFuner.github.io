@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   
     <title>PMFuner</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jobs Wang">
     
@@ -15,12 +15,14 @@
     
     
     
+    <link rel="alternative" href="/atom.xml" title="PMFuner" type="application/atom+xml">
+    
     
     <link rel="icon" href="/img/favicon.ico">
     
     
-    <link rel="apple-touch-icon" href="/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
     
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 
@@ -31,7 +33,7 @@
           <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/logo.svg" alt="PMFuner" title="PMFuner"/></a>
+				<a href="/"><img src="/img/logo.png" alt="PMFuner" title="PMFuner"/></a>
 			</div>
 			
 			<div id="textlogo">
@@ -44,15 +46,17 @@
 				<ul>
 					<ul>
 					 
-						<li><a href="/">Home</a></li>
+						<li><a href="/">首页</a></li>
 					
-						<li><a href="/archives">Archives</a></li>
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
 					
 					<li>
-					
+ 					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
 						<input type="hidden" name="q" value="site:pmfuner.com">
 					</form>
 					
@@ -60,7 +64,6 @@
 				</ul>
 			</nav>			
 </div>
-
         </header>
         <div id="container">
           <div id="main" class="page" itemscope itemprop="blogPost">
@@ -71,12 +74,11 @@
       <a href="/404.html" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
-    
-      <a href="http://pmfuner.com" title="Jobs Wang">Jobs Wang</a>
-    </p>
+       
+		<a href="http://pmfuner.com/about" title="Jobs Wang" target="_blank" itemprop="author">Jobs Wang</a>
+		
   <p class="article-time">
-    <time datetime="2014-09-14T02:07:46.000Z" itemprop="datePublished">2014-09-14</time>
-    更新日期:<time datetime="2014-09-14T02:08:18.000Z" itemprop="dateModified">2014-09-14</time>
+    <time datetime="2014-09-14T02:07:46.000Z" itemprop="datePublished"> 发表于 2014-09-14</time>
     
   </p>
 </header>
@@ -86,8 +88,10 @@
 		<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8"></script>  
 	</div>
 		<footer class="article-footer clearfix">
+<div class="article-catetags">
 
 
+</div>
 
 
 <div class="article-share" id="share">
@@ -100,6 +104,7 @@
 	</article>
 	
 	
+
 </div>  
         </div>
         <footer><div id="footer" >
@@ -115,15 +120,19 @@
 		
 		
 		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
 		
-		<a href="http://pmfuner.com" target="_blank" title="Jobs Wang">Jobs Wang</a>
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://pmfuner.com/about" target="_blank" title="Jobs Wang">Jobs Wang</a>
 		
 		</p>
 </div>
 </footer>
-        <script src="/js/jquery-2.1.0.min.js"></script>
+        <script src="/js/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
@@ -176,14 +185,15 @@ $(document).ready(function(){
       url = $this.attr('data-url'),
       encodedUrl = encodeURIComponent(url),
       title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
   var html = [
   '<a href="#" class="overlay" id="qrcode"></a>',
   '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
   '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
   '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
   '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
   '<span title="Share to"></span>'
   ].join('');
@@ -199,6 +209,43 @@ $(document).ready(function(){
 </script>
 
 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+
+
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
 
 
 
