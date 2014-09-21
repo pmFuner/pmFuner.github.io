@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A Funny man]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://pmfuner.com/"/>
-  <updated>2014-09-21T04:35:15.230Z</updated>
+  <updated>2014-09-21T09:49:00.272Z</updated>
   <id>http://pmfuner.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://pmfuner.com/2014/09/21/%E5%BF%98%E6%8E%89%E4%B8%80%E5%88%87%EF%BC%8C%E8%AE%B0%E4%BD%8F%E4%BB%8E%E7%94%A8%E6%88%B7%E5%9C%BA%E6%99%AF%E5%87%BA%E5%8F%91/"/>
     <id>http://pmfuner.com/2014/09/21/忘掉一切，记住从用户场景出发/</id>
     <published>2014-09-21T04:30:14.000Z</published>
-    <updated>2014-09-21T04:34:51.000Z</updated>
+    <updated>2014-09-21T07:12:31.000Z</updated>
     <content type="html"><![CDATA[<p>在做产品之前，看过一些书和网络博文.这些书或者网络博文里面讲到的如何抓取用户需求往往是这样说的：</p>
 <ol>
 <li>贴近用户，做用户调研；</li>
@@ -39,6 +39,7 @@
 <p>&ensp;&ensp;1、听到的不一定都是真实的需求，新人很难能从调研到的这些需求当中进行抽丝剥茧。<em>比如福特的例子，人们希望马跑快一些，但福特从中得到的是交通工具的改善这样一个抽丝剥茧后的需求，最终制造出汽车取得了成功</em></p>
 <p>&ensp;&ensp;2、换位思考就更不用说了，没有在真实场景下经历，你很难得到真实的用户需求，这也是需要经历的。</p>
 <p>&ensp;&ensp;3、至于分轴细分用户形象画像进行分析，对于初期，你在缺少真实的用户场景之下，脑补分析往往是错误的。</p>
+<p>在我做外卖O2O的BD的时候，曾经看到过店家在大中午极其忙碌的接单送外卖的场景。那一会，店家根本接不过来电话。如果作为一位PM，你在办公室根本就难以想象到这种场景，因为你不是真正的客户，<strong>变为客户是极其扯淡</strong>。唯有经历这种场景，你才会深刻的知道一个后台打印机CRM系统产品对于商家端究竟是何其重要。而这个后台打印机系统，也是饿了么得到市场欢迎极其重要的一个产品。</p>
 <p>你可以忘记前文的1、2、3的方法论，但唯一要记住的是<strong>从用户场景出发</strong>。从用户场景出发，不仅仅只是把握用户需求关键的一步，也是在设计产品形态的时候极其重要的一步。</p>
 <p>Stay hungry,Stay foolish.欢迎有更多的交流~</p>
 ]]></content>
@@ -50,21 +51,6 @@
 <ul>
 <li>换位思考，了解用户；</li>
 <li>构架X、Y轴，进行多维度的用户画像分析；</l]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[]]></title>
-    <link href="http://pmfuner.com/2014/09/14/second/"/>
-    <id>http://pmfuner.com/2014/09/14/second/</id>
-    <published>2014-09-14T04:07:41.000Z</published>
-    <updated>2014-09-14T04:07:41.000Z</updated>
-    <content type="html"><![CDATA[<p><strong># #learning to# #</strong><br>Test</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><strong># #learning to# #</strong><br>Test</p>
-]]>
     </summary>
     
   </entry>
