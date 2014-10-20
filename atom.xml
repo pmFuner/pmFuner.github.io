@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A Funny man]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://pmfuner.com/"/>
-  <updated>2014-10-19T14:33:37.196Z</updated>
+  <updated>2014-10-20T15:41:10.010Z</updated>
   <id>http://pmfuner.com/</id>
   
   <author>
@@ -13,6 +13,55 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[【每天一品】Agoda]]></title>
+    <link href="http://pmfuner.com/2014/10/20/%E3%80%90%E6%AF%8F%E5%A4%A9%E4%B8%80%E5%93%81%E3%80%91Agoda/"/>
+    <id>http://pmfuner.com/2014/10/20/【每天一品】Agoda/</id>
+    <published>2014-10-20T15:40:44.000Z</published>
+    <updated>2014-10-20T15:40:58.000Z</updated>
+    <content type="html"><![CDATA[<p>体验好巧网，就像是吃了场大餐，而用上Agoda的时候，感觉瞬间回到了蛮荒时代，真是刺激。罢了，还是继续今天的分析，继续围绕搜索模块。</p>
+<p><img src="http://i.imgur.com/SZhAjX2.jpg" alt=""></p>
+<p>进入Agoda的首页的时候，突然间以为来到了好巧网。布局是何其的相似，突出了位置的搜索。就在我满怀期待的时候，我看到了不一样的搜索，是的，完全不一样。</p>
+<p><img src="http://i.imgur.com/nKCJymA.jpg" alt=""></p>
+<p><img src="http://i.imgur.com/RoE0kI6.jpg" alt=""></p>
+<p>和往期的OTA携程、booking以及好巧网都不一样，Agoda是把搜索放到左侧，类似于Linkin的搜索方式。左侧的搜索是手风琴效果，全部tab都是默认展开，所以距离拉得非常的大。但是搜索的维度和携程、好巧网都差不多。星级/住宿类型/酒店服务/周边位置等等。这种体验，在我第一次进到页面的时候就开始吐槽，因为我必须下拉看很多无关的酒店内容。Agoda作为跨国的OTA酒店预订产品，面对的同样是海外游用户。想想我们前两篇关于好巧网和booking的一品，我就很清楚的讲到，针对海外游的用户场景，最好的方式肯定是突出位置搜索。那我们看看agoda的位置搜索在哪里。<br><img src="http://i.imgur.com/M4N0BoY.jpg" alt=""></p>
+<p><img src="http://i.imgur.com/uofjKzS.jpg" alt=""></p>
+<p>点击右上角的MAP，弹框出地图，这时候就可以直接点击地图来搜索。这里我们来对比好巧网的位置搜索中的地图摆放。</p>
+<p><img src="http://i.imgur.com/Iulyhzi.jpg" alt=""></p>
+<p><img src="http://i.imgur.com/7TuZnId.jpg" alt=""></p>
+<p>明显可以看到，好巧网的基于地图的位置搜索都放到右侧，非常直观，非常明显。而Agoda的地图搜索用如此小的按钮当做入口，显然是不够直观的。</p>
+<p>再理一理前两次讲到的booking、携程、好巧的搜索，这些搜索主体的放置均是横栏式的。<br><img src="http://i.imgur.com/Td7jWZF.jpg" alt=""></p>
+<p>为什么Agoda的搜索要设置为左侧竖栏，为什么他的基于地图的搜索按钮并不突出？</p>
+<p>这里面是有些原因的。左侧竖栏的搜索，会增加用户的下拉行为。增加下拉行为，意味着用户停留页面的平均时间增长，用户接收的酒店信息就更多了，这无形会增加用户的预订转化率。但能增加多少转化率？就像我当时的吐槽，看了一大堆无用的酒店信息，这种给用户带来的体验是惨绝人寰的。</p>
+<p>首先左侧的搜索框是随着右侧的页面滚动的，所以便利的点击左侧搜索是不可能的；其次，搜索里的tab栏里的内容非常多，最多的将近20多个选项，一个个让用户勾选再搜索，这是多么恶劣的体验。当然，针对有些用户没有体验过更好的产品，agoda以其市场资源的积累，也能吸引一部分用户来使用。这算是agoda的优势。</p>
+<p>我不认为这种左侧无限放置搜索的方式会增加非常多的转化率，这是蛮荒时代的产品，那个时代的用户口味还没那么叼。而好巧网，把位置搜索做得已经超越他们太多了。Don’t make me think.我们也要看到，对于这样的大公司，产品的重构和转型已经是基本不可能的事情。基础的技术架构已经陈旧，成年累月的积累，太重。重构意味着从头来过，意味着会失去大量老用户。这里吐槽的产品体验，只是我们在这个时代已经不够合适，下一个时代的人又会吐槽现在的产品。祝福好巧网走得更远。</p>
+<p>agoda在酒店信息的展示上还是值得借鉴的。<br><img src="http://i.imgur.com/NnIMtko.jpg" alt=""></p>
+<p><img src="http://i.imgur.com/dEFqio8.jpg" alt=""></p>
+<p>对比booking等传统的OTA网站酒店显示，Agoda在预订酒店的决策引导上，通过文字颜色的变化展示出空房数量，这对于用户的心理还是有影响的。</p>
+<p><img src="http://i.imgur.com/JLLWYO2.jpg" alt=""></p>
+<p>在图片展示上和之前的差不多，但是他抽取出了评论，把评论中用户谈及到最多的观点挖掘出来当用户印象。</p>
+<p><img src="http://i.imgur.com/xRfZng0.jpg" alt=""></p>
+<p>Agoda的评论挖掘值得学习。</p>
+<p>第一：区分住客类型，不同的住客类型会有不同的酒店评分和六个维度的评分；</p>
+<p>第二：在评论的内容上，都把评论当中的用户的主要印象抽取出来，并且绿色的评论体现了符合酒店几个维度的主要特点。</p>
+<p>在对评论数据的挖掘展现上，Agoda做得比好巧网好。好巧网在评论这一块并没有分析出用户具体的观点和印象。评论的数据挖掘是一件非常耗费开发时间的事情，难度也大，大数据的背后挖掘并没有像前台展示那样简单。</p>
+<p>个人觉得Agoda在评论上也还有改进的地方，比如游客类型的选取，把订这家酒店最多的游客类型抽取出来当做酒店的一个标签，也许会更好。但这样，也可能会带来一个后果，这种游客类型的酒店的空房率会增加。酒店的房型会有很多种，针对不同的用户。假如OTA将酒店固定为某种游客类型的酒店，很可能会就会带来以上说到的后果。更优化的做法，是针对房型进行细致的标签优化，这样子的一个缺点就是技术成本提升。所以就要通过收益来考量，酒店的游客类型标签需要细化到多深。</p>
+<p>今天也还是主要针对搜索模块和评论模块进行分析。从Agoda上看到了不一样的风格，竖式搜索；更好的评论挖掘。看这篇文章的时候，可以针对性的参考之前的三篇文章<a href="http://www.jianshu.com/p/37c33db37ebf" target="_blank" rel="external">《【每天一品】好巧网(1)》</a>、<a href="http://www.jianshu.com/p/a51cd7759f8a" target="_blank" rel="external">《【每天一品】好巧网(2)》</a>、<a href="http://www.jianshu.com/p/bdc2e928dff0" target="_blank" rel="external">《【每天一品】Booking》</a>,相信对于酒店预订行业的搜索模块就会有更深的认识。</p>
+<p>=================================</p>
+<p>这里只求真，没有真理。</p>
+<p>个人独立博客：PMFuner.com</p>
+<p>记录一个不惧撞南墙的野路子产品经理的故事.</p>
+<p>期待分享和交流~</p>
+<p><img src="http://i.imgur.com/C5NuCvH.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>体验好巧网，就像是吃了场大餐，而用上Agoda的时候，感觉瞬间回到了蛮荒时代，真是刺激。罢了，还是继续今天的分析，继续围绕搜索模块。</p>
+<p><img src="http://i.imgur.com/SZhAjX2.jpg" alt=""></p>
+<p>进入Agod]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[从好巧网学到的产品交互]]></title>
