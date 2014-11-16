@@ -1,0 +1,394 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>【每天一品】关于Booking和携程的酒店预订模块的思考 | PMFuner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jobs Wang">
+    
+    <meta name="description" content="一个传统的用户预订酒店流程的开始入口一般来说是搜索查询框,这里我暂时排除掉入口其他的引导,只关注这一个入口来分析一个产品背后的思路和缘由.
+
+仅从入口就可以看出两个网站针对的用户群体的不同.Booking在一开始的搜索的过程当中，就提供了更多的条件筛选，而不是只是通过地点和入住时间筛选。携程的搜索亮">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="PMFuner" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="PMFuner" title="PMFuner"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="PMFuner">PMFuner</a></h1>
+				<h2 class="blog-motto">A Funny man</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:pmfuner.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/10/14/【每天一品】关于Booking和携程的酒店预订模块的思考/" title="【每天一品】关于Booking和携程的酒店预订模块的思考" itemprop="url">【每天一品】关于Booking和携程的酒店预订模块的思考</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://pmfuner.com/about" title="Jobs Wang" target="_blank" itemprop="author">Jobs Wang</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-13T16:10:20.000Z" itemprop="datePublished"> 发表于 2014-10-14</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			
+		
+		</div>
+		
+		<p>一个传统的用户预订酒店流程的开始入口一般来说是搜索查询框,这里我暂时排除掉入口其他的引导,只关注这一个入口来分析一个产品背后的思路和缘由.</p>
+<p><img src="http://i.imgur.com/iKeysG3.jpg" alt=""><br><img src="http://i.imgur.com/nJ5wKef.jpg" alt=""></p>
+<p>仅从入口就可以看出两个网站针对的用户群体的不同.Booking在一开始的搜索的过程当中，就提供了更多的条件筛选，而不是只是通过地点和入住时间筛选。携程的搜索亮点在于增加了地标位置的一个筛选条件的搜索。从选择搜索类型这一选项，很清楚的看到booking的面对的用户更多是家庭、情侣等团体出游的用户。</p>
+<p>接下来看看搜索后的一个页面展示<br><img src="http://i.imgur.com/T3wYpqg.jpg" alt=""><br><img src="http://i.imgur.com/5gmu6Jw.jpg" alt=""></p>
+<p>从这里可以很明显的看到，Booking作为一个国际化的OTA网站，其面对客户时，更多的是出国游的用户。这些用户对于出国游的地域和酒店往往是陌生的。它提供的根据附近的景点、机场、地标搜索酒店功能非常直观的展示在搜索酒店的左侧，这对于陌生用户来说是很好的引导。</p>
+<p>但从这个页面上，可以看到其右侧的酒店排序并不是按评分的高低，也没有按价格的高低。尽管如此，他也没有提供一个选择排序的功能。这是为什么呢？这样的体验并不好，因为用户需要花更多的思考去选取酒店。</p>
+<p>至于携程，提供了多元化、细致的酒店搜索。从用户的体验来感受，相对booking会好很多。但是具体情境下，哪个网站用户的转化率会更高，要区分看待。</p>
+<p>若是出国旅游的处于陌生的环境之下的用户，我认为booking的这种提供方式会更有效果。因为，用户往往不知道哪家酒店好，出来游玩的用户基本是以景点、饮食等地理位置作为一个搜索的首选条件。而携程在这方面是做得不够直接的。</p>
+<p>但是以用户商旅或是用户较为熟悉环境的情境之下，携程的多元化筛选会让用户感受到非常细致的选择。而booking在这种情况下，用户的转化率就不会很高。</p>
+<p>所以从用户场景来看，两者的不一致的原因就轻易可知了。但booking的确需要有优化的地方。下一期再来拿同样出国游订酒店的网站来作为对比谈谈。</p>
+<p>接下来从评论角度来思考这两个产品做的酒店引导的方式。</p>
+<p><img src="http://i.imgur.com/4RLA6jy.jpg" alt=""><br><img src="http://i.imgur.com/9PkPuTN.jpg" alt=""></p>
+<p>从评论的展示上来看，携程评论的摆放更加显眼，booking的酒店评分非常不明显，字体并不突出。</p>
+<p><img src="http://i.imgur.com/QAppRqK.jpg" alt=""></p>
+<p><img src="http://i.imgur.com/HyA2ftH.jpg" alt=""></p>
+<p>从这种评论展示形式上，booking和携程的评论有点类似，但是携程的住客印象更加的直白，在整个排版上不显得混乱。而booking的这个酒店评论展示比较粗糙。</p>
+<p><img src="http://i.imgur.com/vCqZ6Xo.jpg" alt=""><br><img src="http://i.imgur.com/yyzKrHA.jpg" alt=""></p>
+<p>同样对比这两个评论的详情页，就看出差别了。booking对评论的详情页展示更加的直接，从7个维度的评分来表现酒店的基本情况。还有通过对话流的方式来展示评论，这种评论方式值得我们学习。这种对话流的评论方式，更便于用户接受和用户在评论上的交互。但booking在这种方式上没做出细化，好差评的这种方式很零碎。这又是值得吐槽的地方。</p>
+<p>携程在这一块，采用了跟帖式的评论展现形式，在维度评分上，加入了顾客印象。booking若结合携程的这个顾客印象，同时展示在维度评分下，作为用户，我感觉更便于我做出判断。携程的这种跟帖方式评论虽然不像Booking那种方式让人有沟通的欲望，但是其做到了将评论分成推荐评论和有待改善评论，用户能同时看到好差评。</p>
+<p>评论、位置搜索等都是帮助用户做决策的一种方式，基于用户不同的情境下，用户对于搜索可能有所不同。但就针对评论这一块，如果评论能够分析出好差评的观点，并且把好差评归入区分从不同的维度，而不是放到整体的评论下面，用户的体验就会更加的爽快了。</p>
+<p>一家见解之言。仅就今天的分析来看，针对这个酒店预订模块，两家有共通之处，也有因针对用户群体的不同导致的页面布局和产品功能摆放的不同。思考小细节背后的产品思路，才是干货所在。</p>
+<p>============================================</p>
+<p>个人独立博客：PMFuner.com</p>
+<p>记录一个不惧撞南墙的野路子产品经理的故事.</p>
+<p>期待分享和交流~</p>
+<p><img src="http://i.imgur.com/C5NuCvH.jpg" alt=""></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://pmfuner.com/2014/10/14/【每天一品】关于Booking和携程的酒店预订模块的思考/" data-title="【每天一品】关于Booking和携程的酒店预订模块的思考 | PMFuner" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/10/15/今天只要少走一条昨天走过的弯路/" title="今天只要少走一条昨天走过的弯路">
+  <strong>上一篇：</strong><br/>
+  <span>
+  今天只要少走一条昨天走过的弯路</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/10/12/生活白描20141012/"  title="生活白描20141012">
+ <strong>下一篇：</strong><br/> 
+ <span>生活白描20141012
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://wuchong.me" target="_blank" title="WuChong">Jark's Blog</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/脚下日月" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:doitwgy@163.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://pmfuner.com/about" target="_blank" title="Jobs Wang">Jobs Wang</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"null"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+
+
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+
+
+
+
+  </body>
+</html>
